@@ -14,6 +14,14 @@ def appProperties = new Properties()
 appProperties.load(new FileInputStream(appPropertiesFile))
 
 android {
+    signingConfigs {
+        release {
+            storeFile file(rootProject.file("store\\store-key.jks").path)
+            storePassword appProperties['STORE_PASSWORD']
+            keyPassword appProperties['KEY_PASSWORD']
+            keyAlias appProperties['KEY_ALIAS']
+        }
+    }
     namespace 'com.gms.wallpapers.wallpapers_android'
     compileSdk 33
 
@@ -44,6 +52,7 @@ android {
         release {
             minifyEnabled true
             shrinkResources true
+            signingConfig signingConfigs.release
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
         }
     }
