@@ -12,6 +12,6 @@ dependencyResolutionManagement {
         mavenCentral()
     }
 }
-rootProject.name = "wallpapers-android"
+rootProject.name = "wallpapers"
 include ':app'
 include ':core'

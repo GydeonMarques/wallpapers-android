@@ -22,11 +22,11 @@ android {
             keyAlias appProperties['KEY_ALIAS']
         }
     }
-    namespace 'com.gms.wallpapers.wallpapers_android'
+    namespace 'com.gms.wallpapers'
     compileSdk 33
 
     defaultConfig {
-        applicationId "com.gms.wallpapers.wallpapers_android"
+        applicationId "com.gms.wallpapers"
         minSdk 24
         targetSdk 33
         versionCode 1

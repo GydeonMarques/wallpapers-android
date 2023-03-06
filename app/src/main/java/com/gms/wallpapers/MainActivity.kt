@@ -1,4 +1,4 @@
-package com.gms.wallpapers.wallpapers_android
+package com.gms.wallpapers
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
